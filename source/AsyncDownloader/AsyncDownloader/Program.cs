@@ -32,7 +32,7 @@ namespace AsyncDownloader
 
         public Task DownloadAsync()
         {
-            var delay = Generator.Next(400, 3500);
+            var delay = Generator.Next(400, 30000);
 
             return Task
                 .Delay(delay)
